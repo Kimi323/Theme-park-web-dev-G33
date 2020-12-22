@@ -1,0 +1,54 @@
+/* Tab and content position*/
+.tab {
+    overflow: hidden;
+}
+  
+/* Tab */
+.tab button {
+    float: left;
+    border: none;
+    cursor: pointer;
+    padding: 16px 16px;
+    font-size: 20px;
+}
+  
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: rgb(243, 200, 200);
+}
+
+/* Background color of class active */
+.tab button.active {
+    background-color: rgb(228, 218, 218);
+}
+  
+/* Tab content */
+.tabcontent {
+    display: none;
+    float: left;
+    padding: 6px 12px;
+    background-color: rgb(228, 218, 218);;
+}
+
+/* position of div with class restaurant */
+.restaurant {
+  float: left;
+  margin: 5px 55px 15px 85px;
+  border: 2px solid black;
+}
+
+.restaurant button {
+  float: left;
+  border: 3px solid orange;
+  cursor: pointer;
+  padding: 10px 10px;
+  margin-left: 40px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  background-color: rgb(120, 202, 202);
+  width: 200px;
+}
+
+.restaurant h4 {
+  text-align: center;
+}

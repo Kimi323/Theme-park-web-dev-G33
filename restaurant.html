@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Odyssey Park</title>
+<!-- read css and javascript files -->
+<link rel="stylesheet" type="text/css" href="restaurant.css">
+<script type="text/javascript" src="restaurant.js"></script>
+</head>
+<body>
+    <div id="header-area">
+        <h1>Odyssey Park</h1>
+    </div>
+
+    <div id="body-area">
+        <!-- Tab link -->
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Home')">Home</button>
+            <button class="tablinks" onclick="openTab(event, 'Dining')">Dining</button>
+            <button class="tablinks" onclick="openTab(event, 'History')">History</button>
+        </div>
+  
+        <!-- Tab content -->
+        <div id="Home" class="tabcontent">
+            <h3>Home</h3>
+            <p>some text</p>
+        </div>
+  
+        <div id="Dining" class="tabcontent">
+            <h3>Welcome to our unique restaurants in Odyssey Park</h3>
+            <div class="restaurant">
+                <h4>Adventure Jungle Restaurant</h4>
+                <img src="images/restaurant01.jpg" width="530" height="390" title="seaside">
+                <div>
+                    <button>Menu and Details</button>
+                    <button>Book Now</button>
+                </div>
+            </div>
+            <div class="restaurant">
+                <h4>Odyssey Seafood Restaurant</h4>
+                <img src="images/restaurant02.jpg" width="530" height="390" title="jungle">
+                <div>
+                    <button>Menu and Details</button>
+                    <button>Book Now</button>
+                </div>
+            </div>
+            <div class="restaurant">
+                <h4>Sugar Moon’s Restaurant</h4>
+                <img src="images/restaurant03.jpg" width="530" height="390" title="sugar-moon">
+                <div>
+                    <button>Menu and Details</button>
+                    <button>Book Now</button>
+                </div>
+            </div>
+            <div class="restaurant">
+                <h4>Arthur’s Burger House</h4>
+                <img src="images/restaurant04.jpg" width="530" height="390" title="burger-house">
+                <div>
+                    <button>Menu and Details</button>
+                    <button>Book Now</button>
+                </div>
+            </div>
+        </div>
+  
+        <div id="History" class="tabcontent">
+            <h3>History</h3>
+            <p>History</p>
+        </div>
+    </div>
+</body>
+</html>
