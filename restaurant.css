@@ -1,42 +1,10 @@
-/* Tab and content position*/
-.tab {
-    overflow: hidden;
-}
-  
-/* Tab */
-.tab button {
-    float: left;
-    border: none;
-    cursor: pointer;
-    padding: 16px 16px;
-    font-size: 20px;
-}
-  
-/* Change background color of buttons on hover */
-.tab button:hover {
-    background-color: rgb(243, 200, 200);
-}
-
-/* Background color of class active */
-.tab button.active {
-    background-color: rgb(228, 218, 218);
-}
-  
-/* Tab content */
-.tabcontent {
-    display: none;
-    float: left;
-    padding: 6px 12px;
-    background-color: rgb(228, 218, 218);;
-}
-
 /* position of div with class restaurant */
 .restaurant {
   float: left;
   margin: 5px 55px 15px 85px;
   border: 2px solid black;
 }
-
+  
 .restaurant button {
   float: left;
   border: 3px solid orange;
@@ -51,4 +19,40 @@
 
 .restaurant h4 {
   text-align: center;
+}
+
+/* Modal box including discription and menu */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.6); /* color and opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: white;
+  margin: 100px;
+  padding: 20px;
+  width: 80%;
+}
+
+/* The Close Button X */
+.close {
+  color: grey;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Change the color of close button when mouse hover */
+.close:hover {
+  color: #000;
+  cursor: pointer;
 }

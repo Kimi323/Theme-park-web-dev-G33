@@ -1,20 +1,20 @@
-function openTab(e, tabName) {
-    // Declare all variables
-    var i, tabcontent, tablinks;
-  
-    // Get all elements with class="tabcontent" and hide them
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
+window.onload = function() {
+    // Get the modal
+    var modal = document.getElementById("modal-jungle");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("btn-jungle");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+        modal.style.display = "block";
     }
-  
-    // Get all elements with class="tablinks" and remove the class "active"
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
+
+    // When the user clicks on X, close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
     }
-  
-    // Add "active" class to the tab pressed
-    document.getElementById(tabName).style.display = "block";
-    e.currentTarget.className += " active";
-  }
+}

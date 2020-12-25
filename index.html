@@ -3,7 +3,9 @@
 <head>
 <title>Odyssey Park</title>
 <!-- read css and javascript files -->
+<link rel="stylesheet" type="text/css" href="common.css">
 <link rel="stylesheet" type="text/css" href="restaurant.css">
+<script type="text/javascript" src="common.js"></script>
 <script type="text/javascript" src="restaurant.js"></script>
 </head>
 <body>
@@ -12,7 +14,7 @@
     </div>
 
     <div id="body-area">
-        
+
         <!-- Tab link -->
         <div class="tab">
             <button class="tablinks" onclick="openTab(event, 'Home')">Home</button>
@@ -63,7 +65,7 @@
                 <h4>Adventure Jungle Restaurant</h4>
                 <img src="images/restaurant01.jpg" width="530" height="390" title="seaside">
                 <div>
-                    <button>Menu and Details</button>
+                    <button id="btn-jungle">Menu and Details</button>
                     <button>Book Now</button>
                 </div>
             </div>
@@ -91,6 +93,25 @@
                     <button>Book Now</button>
                 </div>
             </div>
+
+            <!-- The Modal -->
+            <div id="modal-jungle" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">X</span>
+                    <p>Continue your park adventure in our wild jungle!</p>
+                    <p>
+                    Short Menu
+                    King of Jungle
+                    Jumbo sandwich with juicy roasted chicken, fresh onions, original chilli sauce.
+                    Roast spicy turkey leg
+                    Juicy turkey leg with 13 kinds of spice! 
+                    Fresh juice
+                    Seasonal fruits including coconut, pineapple, kiwi, dragon fruit.
+                    </p>
+                </div>
+            </div>
+  
         </div>
   
         <div id="History" class="tabcontent">
