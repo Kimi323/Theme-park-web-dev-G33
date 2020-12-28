@@ -1,196 +1,203 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Odyssey Park</title>
-<!-- read css and javascript files -->
-<link rel="stylesheet" type="text/css" href="common.css">
-<link rel="stylesheet" type="text/css" href="video.css">
-<link rel="stylesheet" type="text/css" href="restaurant.css">
-<script type="text/javascript" src="common.js"></script>
-<script type="text/javascript" src="restaurant.js"></script>
-</head>
-<body>
-    <div id="header-area">
-        <h1>Odyssey Park</h1>
-    </div>
+    <head>
+        <title>Odyssey Park</title>
+        <!-- read css and javascript files -->
+        <link rel="stylesheet" type="text/css" href="common.css">
+        <link rel="stylesheet" type="text/css" href="video.css">
+        <link rel="stylesheet" type="text/css" href="restaurant.css">
+        <script type="text/javascript" src="common.js"></script>
+        <script type="text/javascript" src="restaurant.js"></script>
+    </head>
 
-    <div id="body-area">
-
-        <!-- Tab link -->
-        <div class="tab">
-            <button class="tablinks" onclick="openTab(event, 'Home')">Home</button>
-            <button class="tablinks" onclick="openTab(event, 'Dining')">Dining</button>
-            <button class="tablinks" onclick="openTab(event, 'History')">History</button>
-        </div>
-  
-        <!-- Tab content -->
-        <div id="Home" class="tabcontent">
-            <h3>An inherent risk of exposure to COVID-19 exists in any public place where people are present.</h3>
-            <div class="attractions">
-              <h4>Scream</h3>
-              <img src="images/rideScream.jpg" width="530" height="390">
-                <p>Strap in, and get ready to stop, drop and roar. The Scream catapults you forward so quickly, you’re not even sure if there’s track in front of you. Soaring towards the sky with your legs dangling at 116 kilometers per hour followed by gravity defying drop. You immediately ascend up again in the opposite direction never knowing when you’re going to start falling again. Traveling back and forth builds momentum to reach a max height of 63 meters. Are you brave enough to give it a try?</p>
-              <div>
-                <button>Rider Safety Information</button>
-              </div>
-            </div>
-            <div class="attractions">
-              <h4>The Amazon</h3>
-              <img src="images/rideAmazon.jpeg" width="530" height="390">
-                <p>Relish the feeling of whitewater rafting on this raging river ride. Since its opening, riders have challenged the rapids on this dizzying water adventure. The Amazon offers large family-size rafts for up to 6 people. Once aboard, riders are at the mercy of this 1,800 feet long journey across powerful waves and torrents, concluding at a cascading waterfall. Every ride is unique, as there’s no telling what your erratic escape will include! With each ride different from the last, be prepared to get drenched while having fun.</p>
-              <div>
-                <button>Rider Safety Information</button>
-              </div>
-            </div>
-            <div class="attractions">
-              <h4>Survivor</h3>
-              <img src="images/rideSurvivor.jpg" width="530" height="390">
-                <p>Expect the adrenaline to be high and friendships to be tested - are you sure that you can trust your friends in the apocalypse? Fight off zombies and prove you are a survivor. With over 200 animated zombies and 40+ real life crew members. Survive the abandoned mental asylum where the patients have fallen victim to the brain eating virus. Do you have it in you? </p>
-              <div>
-                <button>Rider Safety Informaton</button>
-              </div>
-            </div>
-            <div class="attractions">
-              <h4>Fall of Doom</h3>
-              <img src="images/rideFallofDoom.jpg" width="480" height="690">
-                <p>Our most sinister invention yet - a 60 meter tall tower device meant to harness guests' "fear." To activate it, guests are launched up the tower at 64 kilometers per hour, providing unprecedented views of the park. This extreme ride is 5 times the fun as it takes you to the top and drops you into a free fall and just when you thought that was enough it takes you back up for a total of 5 drops.  </p>
-              <div>
-                <button>Rider Safety Information</button>
-              </div>
-            </div>
+    <body>
+        <div id="header-area">
+            <img src="images/header-image.png" height="200">
+            <h1>Odyssey Park</h1>
         </div>
 
-        <div id="Dining" class="tabcontent">
-            <h2>Welcome to our unique restaurants in Odyssey Park</h2>
-            <div class="restaurant">
-                <h3>Adventure Jungle Restaurant</h3>
-                <img src="images/restaurant01.jpg" width="530" height="390" title="jungle">
+        <div id="body-area">
+
+            <!-- Tab link -->
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'Home')">Home</button>
+                <button class="tablinks" onclick="openTab(event, 'Dining')">Dining</button>
+                <button class="tablinks" onclick="openTab(event, 'History')">History</button>
+            </div>
+    
+            <!-- Home Tab content -->
+            <div id="Home" class="tabcontent">
+                <h3>An inherent risk of exposure to COVID-19 exists in any public place where people are present.</h3>
+                <div class="attractions">
+                    <h4>Scream</h3>
+                    <img src="images/rideScream.jpg" width="530" height="390">
+                    <p>Strap in, and get ready to stop, drop and roar. The Scream catapults you forward so quickly, you’re not even sure if there’s track in front of you. Soaring towards the sky with your legs dangling at 116 kilometers per hour followed by gravity defying drop. You immediately ascend up again in the opposite direction never knowing when you’re going to start falling again. Traveling back and forth builds momentum to reach a max height of 63 meters. Are you brave enough to give it a try?</p>
+                </div>
                 <div>
-                    <button id="btn-jungle" onClick="openModal(this.id)">Menu and Details</button>
-                    <button>Book Now</button>
+                    <button>Rider Safety Information</button>
                 </div>
-            </div>
-            <div class="restaurant">
-                <h3>Odyssey Seafood Restaurant</h3>
-                <img src="images/restaurant02.jpg" width="530" height="390" title="seafood">
+
+                <div class="attractions">
+                    <h4>The Amazon</h3>
+                    <img src="images/rideAmazon.jpeg" width="530" height="390">
+                    <p>Relish the feeling of whitewater rafting on this raging river ride. Since its opening, riders have challenged the rapids on this dizzying water adventure. The Amazon offers large family-size rafts for up to 6 people. Once aboard, riders are at the mercy of this 1,800 feet long journey across powerful waves and torrents, concluding at a cascading waterfall. Every ride is unique, as there’s no telling what your erratic escape will include! With each ride different from the last, be prepared to get drenched while having fun.</p>
+                </div>
                 <div>
-                    <button id="btn-seafood" onClick="openModal(this.id)">Menu and Details</button>
-                    <button>Book Now</button>
+                    <button>Rider Safety Information</button>
                 </div>
-            </div>
-            <div class="restaurant">
-                <h3>Sugar Moon’s Restaurant</h3>
-                <img src="images/restaurant03.jpg" width="530" height="390" title="sugar-moon">
+
+                <div class="attractions">
+                    <h4>Survivor</h3>
+                    <img src="images/rideSurvivor.jpg" width="530" height="390">
+                    <p>Expect the adrenaline to be high and friendships to be tested - are you sure that you can trust your friends in the apocalypse? Fight off zombies and prove you are a survivor. With over 200 animated zombies and 40+ real life crew members. Survive the abandoned mental asylum where the patients have fallen victim to the brain eating virus. Do you have it in you? </p>
+                </div>
                 <div>
-                    <button id="btn-sugar" onClick="openModal(this.id)">Menu and Details</button>
-                    <button>Book Now</button>
+                    <button>Rider Safety Informaton</button>
                 </div>
-            </div>
-            <div class="restaurant">
-                <h3>Arthur’s Burger House</h3>
-                <img src="images/restaurant04.jpg" width="530" height="390" title="burger-house">
+
+                <div class="attractions">
+                    <h4>Fall of Doom</h3>
+                    <img src="images/rideFallofDoom.jpg" width="480" height="690">
+                    <p>Our most sinister invention yet - a 60 meter tall tower device meant to harness guests' "fear." To activate it, guests are launched up the tower at 64 kilometers per hour, providing unprecedented views of the park. This extreme ride is 5 times the fun as it takes you to the top and drops you into a free fall and just when you thought that was enough it takes you back up for a total of 5 drops.  </p>
+                </div>
                 <div>
-                    <button id="btn-burger" onClick="openModal(this.id)">Menu and Details</button>
-                    <button>Book Now</button>
+                    <button>Rider Safety Information</button>
                 </div>
             </div>
 
-            <!-- Modal of Jungle Restaurant -->
-            <div id="modal-jungle" class="modal">
-                <!-- Modal content -->
-                <div class="modal-content">
-                    <span class="close" onClick="closeModal()">X</span>
-                    <h3>Continue your park adventure in our wild jungle! Opens from 10 am to 11 pm</h3>
-                    <h3>Menu</h3>
-                    <h4>King of Jungle</h4>
-                    <p>Jumbo sandwich with juicy roasted chicken, fresh onions, original chilli sauce.</p>
-                    <h4>Roast spicy turkey leg</h4>
-                    <p>Juicy turkey leg with 13 kinds of spice!</p>
-                    <h4>Fresh juice</h4> 
-                    <p>Seasonal fruits including coconut, pineapple, kiwi, dragon fruit.</p>
+            <!-- Dining Tab content -->
+            <div id="Dining" class="tabcontent">
+                <h2>Welcome to our unique restaurants in Odyssey Park</h2>
+                <div class="restaurant">
+                    <h3>Adventure Jungle Restaurant</h3>
+                    <img src="images/restaurant01.jpg" width="530" height="390" title="jungle">
+                    <div>
+                        <button id="btn-jungle" onClick="openModal(this.id)">Menu and Details</button>
+                        <button>Book Now</button>
+                    </div>
                 </div>
+                <div class="restaurant">
+                    <h3>Odyssey Seafood Restaurant</h3>
+                    <img src="images/restaurant02.jpg" width="530" height="390" title="seafood">
+                    <div>
+                        <button id="btn-seafood" onClick="openModal(this.id)">Menu and Details</button>
+                        <button>Book Now</button>
+                    </div>
+                </div>
+                <div class="restaurant">
+                    <h3>Sugar Moon’s Restaurant</h3>
+                    <img src="images/restaurant03.jpg" width="530" height="390" title="sugar-moon">
+                    <div>
+                        <button id="btn-sugar" onClick="openModal(this.id)">Menu and Details</button>
+                        <button>Book Now</button>
+                    </div>
+                </div>
+                <div class="restaurant">
+                    <h3>Arthur’s Burger House</h3>
+                    <img src="images/restaurant04.jpg" width="530" height="390" title="burger-house">
+                    <div>
+                        <button id="btn-burger" onClick="openModal(this.id)">Menu and Details</button>
+                        <button>Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Modal of Jungle Restaurant -->
+                <div id="modal-jungle" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close" onClick="closeModal()">X</span>
+                        <h3>Continue your park adventure in our wild jungle! Opens from 10 am to 11 pm</h3>
+                        <h3>Menu</h3>
+                        <h4>King of Jungle</h4>
+                        <p>Jumbo sandwich with juicy roasted chicken, fresh onions, original chilli sauce.</p>
+                        <h4>Roast spicy turkey leg</h4>
+                        <p>Juicy turkey leg with 13 kinds of spice!</p>
+                        <h4>Fresh juice</h4> 
+                        <p>Seasonal fruits including coconut, pineapple, kiwi, dragon fruit.</p>
+                    </div>
+                </div>
+
+                <!-- Modal of Seafood Restaurant -->
+                <div id="modal-seafood" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onClick="closeModal()">X</span>
+                        <h3>Relax and enjoy our freshly caught fish and shellfish beside the sea. Opens from 10 am to 12 pm</h3>
+                        <h3>Menu</h3>
+                        <h4>Tuna mixed salad</h4>
+                        <p>Tuna, lettuce, avocado, sliced onions</p>
+                        <h4>California salmon sushi & sashimi</h4>
+                        <p>Served with soy-bean sauce</p>
+                        <h4>Lobsters</h4> 
+                        <h4>Roast squid</h4>
+                    </div>
+                </div>
+
+                <!-- Modal of Sugar-moon Restaurant -->
+                <div id="modal-sugar" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onClick="closeModal()">X</span>
+                        <h3>Sugar Moon’s Restaurant is the oldest restaurant opened in Odyssey Park and serves their customers with high quality fresh foods in the most delicious way. The kitchen is open from 10 am to 11 pm with its menu consisting of Italian, Mexican, world and local tastes.</h3>
+                        <h3>Menu</h3>
+                        <ul>
+                            <h4>Starters</h4>
+                            <li>Falafel with tahini yoghurt</li>
+                            <li>Chicken nachos</li>
+                            <li>Potato wedges</li>
+                            <li>Tomato soup</li>
+                            <li>Mexican Food</li>
+                            <li>Grill Roll Taco</li>
+                            <li>Beef Burritos</li>
+                            <li>Chicken Quesadilla (served with avocado puree, sour cream sauce)</li>
+
+                            <h4>Main Meals</h4>
+                            <li>Noodle with chicken</li>
+                            <li>Viennese schnitzel</li>
+                            <li>Tender steak</li>
+                            <li>Grilled salmon</li>
+                            <li>Spaghetti Bolognese</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Modal of Arthur’s Burger House -->
+                <div id="modal-burger" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onClick="closeModal()">X</span>
+                        <h3>Arthur’s Burger House is dedicated to the Arthur C. Clarke. It is open from 12 pm to 10 pm with unique meat quality and desserts.</h3>
+                        <h3>Menu</h3>
+                        <ul>
+                            <h4>Main</h4>
+                            <li>Gravity Burger (house specialty, served with sour cream and cheddar cheese)</li>
+                            <li>BBQ Burger (served with grilled tomatoes and red onion)</li>
+                            <li>Kid’s Mini Burger and Fries</li>
+                            <li>Vegan Burger</li>
+
+                            <h4>Desserts</h4>
+                            <li>Pumpkin cheesecake</li>
+                            <li>Moon’s cake</li>
+                            <li>Mini pancakes</li>
+                            <li>Caramelized apple pie (with vanilla ice cream)</li>
+                            <li>Fried ice cream</li>
+                        </ul>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <!-- History Tab content -->
+            <div id="History" class="tabcontent">
+                <h2>The Story of Odyssey Park</h2>
+                <video class='restaurant' width="530" height="390" controls>
+                <source src="videos/The_History_of_Odyssey_Park.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+
+                <p>Opened in 1882 by entrepreneur Arthur C. Clarke,  Odyssey Park was the first of three major amusement parks that put Jamaica’s Filostat Island on the map. The park earned its stripes with its signature attraction, a nerve-chilling, eye-bulging, ego-crushing space-inspired ride called 'Cyclone'. Cyclone had a couple of friends in the form of a Ferris Wheel and miniature railroad. </p>
+
+                <p>While Clarke intended Odyssey to be a safe space for families, some rides still ventured into territory that was risqué. Attractions like the “Whichaway” and the “Human Pool Table” tossed strangers against one another and gave couples an excuse to canoodle. Fire destroyed much of Clarke’s park in 1907, but he responded by building a more elaborate Odyssey that has remained in operation until today.Ever the showman, he even charges ten dollars for visitors to view the charred ruins of the original park.</p>
             </div>
 
-            <!-- Modal of Seafood Restaurant -->
-            <div id="modal-seafood" class="modal">
-                <div class="modal-content">
-                    <span class="close" onClick="closeModal()">X</span>
-                    <h3>Relax and enjoy our freshly caught fish and shellfish beside the sea. Opens from 10 am to 12 pm</h3>
-                    <h3>Menu</h3>
-                    <h4>Tuna mixed salad</h4>
-                    <p>Tuna, lettuce, avocado, sliced onions</p>
-                    <h4>California salmon sushi & sashimi</h4>
-                    <p>Served with soy-bean sauce</p>
-                    <h4>Lobsters</h4> 
-                    <h4>Roast squid</h4>
-                </div>
-            </div>
-
-            <!-- Modal of Sugar-moon Restaurant -->
-            <div id="modal-sugar" class="modal">
-                <div class="modal-content">
-                    <span class="close" onClick="closeModal()">X</span>
-                    <h3>Sugar Moon’s Restaurant is the oldest restaurant opened in Odyssey Park and serves their customers with high quality fresh foods in the most delicious way. The kitchen is open from 10 am to 11 pm with its menu consisting of Italian, Mexican, world and local tastes.</h3>
-                    <h3>Menu</h3>
-                    <ul>
-                        <h4>Starters</h4>
-                        <li>Falafel with tahini yoghurt</li>
-                        <li>Chicken nachos</li>
-                        <li>Potato wedges</li>
-                        <li>Tomato soup</li>
-                        <li>Mexican Food</li>
-                        <li>Grill Roll Taco</li>
-                        <li>Beef Burritos</li>
-                        <li>Chicken Quesadilla (served with avocado puree, sour cream sauce)</li>
-
-                        <h4>Main Meals</h4>
-                        <li>Noodle with chicken</li>
-                        <li>Viennese schnitzel</li>
-                        <li>Tender steak</li>
-                        <li>Grilled salmon</li>
-                        <li>Spaghetti Bolognese</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Modal of Arthur’s Burger House -->
-            <div id="modal-burger" class="modal">
-                <div class="modal-content">
-                    <span class="close" onClick="closeModal()">X</span>
-                    <h3>Arthur’s Burger House is dedicated to the Arthur C. Clarke. It is open from 12 pm to 10 pm with unique meat quality and desserts.</h3>
-                    <h3>Menu</h3>
-                    <ul>
-                        <h4>Main</h4>
-                        <li>Gravity Burger (house specialty, served with sour cream and cheddar cheese)</li>
-                        <li>BBQ Burger (served with grilled tomatoes and red onion)</li>
-                        <li>Kid’s Mini Burger and Fries</li>
-                        <li>Vegan Burger</li>
-
-                        <h4>Desserts</h4>
-                        <li>Pumpkin cheesecake</li>
-                        <li>Moon’s cake</li>
-                        <li>Mini pancakes</li>
-                        <li>Caramelized apple pie (with vanilla ice cream)</li>
-                        <li>Fried ice cream</li>
-                    </ul>
-                </div>
-            </div>
-  
         </div>
-  
-        <div id="History" class="tabcontent">
-            <h2>The Story of Odyssey Park</h2>
-            <video class='restaurant' width="530" height="390" controls>
-              <source src="videos/The_History_of_Odyssey_Park.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
+    </body>
 
-            <p>Opened in 1882 by entrepreneur Arthur C. Clarke,  Odyssey Park was the first of three major amusement parks that put Jamaica’s Filostat Island on the map. The park earned its stripes with its signature attraction, a nerve-chilling, eye-bulging, ego-crushing space-inspired ride called 'Cyclone'. Cyclone had a couple of friends in the form of a Ferris Wheel and miniature railroad. </p>
-
-            <p>While Clarke intended Odyssey to be a safe space for families, some rides still ventured into territory that was risqué. Attractions like the “Whichaway” and the “Human Pool Table” tossed strangers against one another and gave couples an excuse to canoodle. Fire destroyed much of Clarke’s park in 1907, but he responded by building a more elaborate Odyssey that has remained in operation until today.Ever the showman, he even charges ten dollars for visitors to view the charred ruins of the original park.</p>
-        </div>
-        
-
-    </div>
-</body>
 </html>

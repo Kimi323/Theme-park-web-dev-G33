@@ -2,7 +2,7 @@
 .restaurant {
   float: left;
   margin: 5px 55px 15px 85px;
-  border: 2px solid black;
+  border: 2px solid orange;
 }
  
 /* Style the menu and book now button */
@@ -14,13 +14,21 @@
   margin-left: 40px;
   margin-bottom: 10px;
   font-size: 20px;
-  background-color: rgb(120, 202, 202);
+  color: rgb(101, 145, 101);
+  background-color: rgb(238, 200, 200);
   width: 200px;
+}
+
+/* Dining top message */
+#Dining h2 {
+  text-align: center;
+  color: rgb(72, 107, 72);
 }
 
 /* Restaurant name */
 .restaurant h3 {
   text-align: center;
+  color: rgb(101, 145, 101);
 }
 
 /* Modal box including discription and menu */
@@ -55,6 +63,6 @@
 
 /* Change the color of close button when mouse hover */
 .close:hover {
-  color: #000;
+  color:green;
   cursor: pointer;
 }

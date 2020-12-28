@@ -1,15 +1,31 @@
-/* Tab and content position*/
+/* Header area title */
+#header-area h1 {
+  position: absolute;
+  top: 0px; 
+  left: 20px;
+  color: grey;
+  font-size: 40px;
+}
+
+/* Header area image */
+.header-area img {
+  float: left;
+  position: relative;
+}
+
+/* Clear the left float of tab contents */
 .tab {
     overflow: hidden;
 }
   
-/* Tab */
+/* Tab button style */
 .tab button {
     float: left;
     border: none;
     cursor: pointer;
     padding: 16px 16px;
     font-size: 20px;
+    color: brown;
 }
   
 /* Change background color of buttons on hover */
