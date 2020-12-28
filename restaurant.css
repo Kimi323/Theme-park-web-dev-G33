@@ -43,11 +43,12 @@
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgba(0,0,0,0.6); /* color and opacity */
+  color: grey;
 }
 
 /* Modal content */
 .modal-content {
-  background-color: white;
+  background-color: rgb(169, 206, 195);
   margin: 100px;
   padding: 20px;
   width: 80%;
@@ -63,6 +64,6 @@
 
 /* Change the color of close button when mouse hover */
 .close:hover {
-  color:green;
+  color: green;
   cursor: pointer;
 }
