@@ -4,7 +4,8 @@
   margin: 5px 55px 15px 85px;
   border: 2px solid black;
 }
-  
+ 
+/* Style the menu and book now button */
 .restaurant button {
   float: left;
   border: 3px solid orange;
@@ -17,7 +18,8 @@
   width: 200px;
 }
 
-.restaurant h4 {
+/* Restaurant name */
+.restaurant h3 {
   text-align: center;
 }
 
@@ -35,7 +37,7 @@
   background-color: rgba(0,0,0,0.6); /* color and opacity */
 }
 
-/* Modal Content */
+/* Modal content */
 .modal-content {
   background-color: white;
   margin: 100px;
@@ -43,7 +45,7 @@
   width: 80%;
 }
 
-/* The Close Button X */
+/* The close button X */
 .close {
   color: grey;
   float: right;

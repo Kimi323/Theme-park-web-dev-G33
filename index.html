@@ -61,55 +61,118 @@
         </div>
 
         <div id="Dining" class="tabcontent">
-            <h3>Welcome to our unique restaurants in Odyssey Park</h3>
+            <h2>Welcome to our unique restaurants in Odyssey Park</h2>
             <div class="restaurant">
-                <h4>Adventure Jungle Restaurant</h4>
-                <img src="images/restaurant01.jpg" width="530" height="390" title="seaside">
+                <h3>Adventure Jungle Restaurant</h3>
+                <img src="images/restaurant01.jpg" width="530" height="390" title="jungle">
                 <div>
-                    <button id="btn-jungle">Menu and Details</button>
+                    <button id="btn-jungle" onClick="openModal(this.id)">Menu and Details</button>
                     <button>Book Now</button>
                 </div>
             </div>
             <div class="restaurant">
-                <h4>Odyssey Seafood Restaurant</h4>
-                <img src="images/restaurant02.jpg" width="530" height="390" title="jungle">
+                <h3>Odyssey Seafood Restaurant</h3>
+                <img src="images/restaurant02.jpg" width="530" height="390" title="seafood">
                 <div>
-                    <button>Menu and Details</button>
+                    <button id="btn-seafood" onClick="openModal(this.id)">Menu and Details</button>
                     <button>Book Now</button>
                 </div>
             </div>
             <div class="restaurant">
-                <h4>Sugar Moon’s Restaurant</h4>
+                <h3>Sugar Moon’s Restaurant</h3>
                 <img src="images/restaurant03.jpg" width="530" height="390" title="sugar-moon">
                 <div>
-                    <button>Menu and Details</button>
+                    <button id="btn-sugar" onClick="openModal(this.id)">Menu and Details</button>
                     <button>Book Now</button>
                 </div>
             </div>
             <div class="restaurant">
-                <h4>Arthur’s Burger House</h4>
+                <h3>Arthur’s Burger House</h3>
                 <img src="images/restaurant04.jpg" width="530" height="390" title="burger-house">
                 <div>
-                    <button>Menu and Details</button>
+                    <button id="btn-burger" onClick="openModal(this.id)">Menu and Details</button>
                     <button>Book Now</button>
                 </div>
             </div>
 
-            <!-- The Modal -->
+            <!-- Modal of Jungle Restaurant -->
             <div id="modal-jungle" class="modal">
                 <!-- Modal content -->
                 <div class="modal-content">
-                    <span class="close">X</span>
-                    <p>Continue your park adventure in our wild jungle!</p>
-                    <p>
-                    Short Menu
-                    King of Jungle
-                    Jumbo sandwich with juicy roasted chicken, fresh onions, original chilli sauce.
-                    Roast spicy turkey leg
-                    Juicy turkey leg with 13 kinds of spice! 
-                    Fresh juice
-                    Seasonal fruits including coconut, pineapple, kiwi, dragon fruit.
-                    </p>
+                    <span class="close" onClick="closeModal()">X</span>
+                    <h3>Continue your park adventure in our wild jungle! Opens from 10 am to 11 pm</h3>
+                    <h3>Menu</h3>
+                    <h4>King of Jungle</h4>
+                    <p>Jumbo sandwich with juicy roasted chicken, fresh onions, original chilli sauce.</p>
+                    <h4>Roast spicy turkey leg</h4>
+                    <p>Juicy turkey leg with 13 kinds of spice!</p>
+                    <h4>Fresh juice</h4> 
+                    <p>Seasonal fruits including coconut, pineapple, kiwi, dragon fruit.</p>
+                </div>
+            </div>
+
+            <!-- Modal of Seafood Restaurant -->
+            <div id="modal-seafood" class="modal">
+                <div class="modal-content">
+                    <span class="close" onClick="closeModal()">X</span>
+                    <h3>Relax and enjoy our freshly caught fish and shellfish beside the sea. Opens from 10 am to 12 pm</h3>
+                    <h3>Menu</h3>
+                    <h4>Tuna mixed salad</h4>
+                    <p>Tuna, lettuce, avocado, sliced onions</p>
+                    <h4>California salmon sushi & sashimi</h4>
+                    <p>Served with soy-bean sauce</p>
+                    <h4>Lobsters</h4> 
+                    <h4>Roast squid</h4>
+                </div>
+            </div>
+
+            <!-- Modal of Sugar-moon Restaurant -->
+            <div id="modal-sugar" class="modal">
+                <div class="modal-content">
+                    <span class="close" onClick="closeModal()">X</span>
+                    <h3>Sugar Moon’s Restaurant is the oldest restaurant opened in Odyssey Park and serves their customers with high quality fresh foods in the most delicious way. The kitchen is open from 10 am to 11 pm with its menu consisting of Italian, Mexican, world and local tastes.</h3>
+                    <h3>Menu</h3>
+                    <ul>
+                        <h4>Starters</h4>
+                        <li>Falafel with tahini yoghurt</li>
+                        <li>Chicken nachos</li>
+                        <li>Potato wedges</li>
+                        <li>Tomato soup</li>
+                        <li>Mexican Food</li>
+                        <li>Grill Roll Taco</li>
+                        <li>Beef Burritos</li>
+                        <li>Chicken Quesadilla (served with avocado puree, sour cream sauce)</li>
+
+                        <h4>Main Meals</h4>
+                        <li>Noodle with chicken</li>
+                        <li>Viennese schnitzel</li>
+                        <li>Tender steak</li>
+                        <li>Grilled salmon</li>
+                        <li>Spaghetti Bolognese</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Modal of Arthur’s Burger House -->
+            <div id="modal-burger" class="modal">
+                <div class="modal-content">
+                    <span class="close" onClick="closeModal()">X</span>
+                    <h3>Arthur’s Burger House is dedicated to the Arthur C. Clarke. It is open from 12 pm to 10 pm with unique meat quality and desserts.</h3>
+                    <h3>Menu</h3>
+                    <ul>
+                        <h4>Main</h4>
+                        <li>Gravity Burger (house specialty, served with sour cream and cheddar cheese)</li>
+                        <li>BBQ Burger (served with grilled tomatoes and red onion)</li>
+                        <li>Kid’s Mini Burger and Fries</li>
+                        <li>Vegan Burger</li>
+
+                        <h4>Desserts</h4>
+                        <li>Pumpkin cheesecake</li>
+                        <li>Moon’s cake</li>
+                        <li>Mini pancakes</li>
+                        <li>Caramelized apple pie (with vanilla ice cream)</li>
+                        <li>Fried ice cream</li>
+                    </ul>
                 </div>
             </div>
   

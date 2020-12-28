@@ -1,20 +1,27 @@
-window.onload = function() {
-    // Get the modal
-    var modal = document.getElementById("modal-jungle");
+// Close the modal when user click on X
+function closeModal() { 
+    // Get the modal list by class
+    var modals = document.getElementsByClassName("modal");
 
-    // Get the button that opens the modal
-    var btn = document.getElementById("btn-jungle");
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks the button, open the modal 
-    btn.onclick = function() {
-        modal.style.display = "block";
+    for (i = 0; i < modals.length; i++) {
+        modals[i].style.display = "none";
     }
+}
 
-    // When the user clicks on X, close the modal
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
+// Open modal corresponding to button id
+function openModal(buttonId) {
+    switch(buttonId) {
+        case 'btn-jungle':
+            document.getElementById("modal-jungle").style.display = "block";
+            break;
+        case 'btn-seafood':
+            document.getElementById("modal-seafood").style.display = "block";
+            break;
+        case 'btn-sugar':
+            document.getElementById("modal-sugar").style.display = "block";
+            break;
+        case 'btn-burger':
+            document.getElementById("modal-burger").style.display = "block";
+            break;
+    }  
 }
