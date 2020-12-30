@@ -46,9 +46,16 @@
     background-color: rgb(228, 218, 218);;
 }
 
-/* Paragraph sytling */
+/* Paragraph styling */
 .history-p {
   color:  #333231;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1.2rem;
+}
+
+/* Center history-header */
+.hist-center {
+  margin: auto;
+  width: 80%;
+  padding: 10px;
 }
